@@ -88,14 +88,14 @@
 		>;
 		};
 
-       		layer1 {
+       		left_layer {
 		bindings = <
 		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_PRCNT			&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK
 		&mt AE A &kp S &kp D &kp F &kp G		        	        &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER
 		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &kp CMMA &kp DOT &kp to 3
          			&mt LCTRL ESC &mt LGUI BKSP					&mt LALT SPC &to 2
 
-		layer2 {
+		right_layer {
 		bindings = <
 		&kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans
 		&kp TAB  &trans   &kp C_VOL_DN  &kp C_VOL_UP  &kp LS(EQUAL) 			&kp EQUAL &kp N4  &kp N5  &kp N6   &kp ENTER
