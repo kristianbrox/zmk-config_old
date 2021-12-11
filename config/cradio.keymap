@@ -90,7 +90,7 @@
 
        		layer1 {
 		bindings = <
-		&kp NO_EXLC &kp NO_QUOT &kp NO_HASH &kp NO_PRCT				&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK
+		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_PRCT				&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK
 		&mt AE A &kp S &kp D &kp F &kp G		        	        &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER
 		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &kp CMMA &kp DOT &kp to 3
          			&mt LCTRL ESC &mt LGUI BKSP					&mt LALT SPC &to 2
