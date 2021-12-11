@@ -90,11 +90,12 @@
 
        		left_layer {
 		bindings = <
-		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_PRCNT			&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK
-		&mt AE A &kp S &kp D &kp F &kp G		        	        &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &kp CMMA &kp DOT &kp to 3
-         			&mt LCTRL ESC &mt LGUI BKSP					&mt LALT SPC &to 2
-
+		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP
+		&kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER
+		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3
+					    &to 0  &sk LSHIFT  					&sk RALT &to 2
+		>;
+		};
 		right_layer {
 		bindings = <
 		&kp ESC  &kp C_PP &kp C_PREV  &kp C_NEXT  &kp LS(MINUS)    			&kp MINUS  &kp N7 &kp N8 &kp N9 &trans
