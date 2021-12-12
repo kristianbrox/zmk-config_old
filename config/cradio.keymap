@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/mouse.h>
 
 // norwegian definitions below
-#define AE	 SQT	   // Æ
-#define OE	 SEMI	   // Ø
+#define AE	 SEMI	   // Æ
+#define OE	 SQT	   // Ø
 #define AA	 LBKT	   // Å
 #define NO_PIPE	 RA(EQUAL) // |
 #define NO_EXCL  LS(N1)    // !
@@ -31,14 +31,13 @@
 #define NO_DASH	 FSLH      // -
 #define NO_APOS	 BSLH      // '
 #define NO_EQL	 LS(N0)    // =
-#define NO_QMARK LS(NO_PLUS) // ?
+#define NO_QMARK LS(DK_PLUS) // ?
 #define NO_QUOT	 LS(N2)    // "
 #define NO_COL	 LS(COMMA) // :
 #define NO_SCOL  LS(DOT)   // ;
 #define NO_TILDE RA(RBKT)  // ~
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
-#define NO_SLSH  LS(N7)   // /
 #define NO_BLSH	 RA(NON_US_BACKSLASH) // \
 
 
@@ -90,7 +89,7 @@
 
        		left_layer {
 		bindings = <
-		&kp NO_EXCL  &kp NO_QUOT &kp NO_HASH &kp NO_PRCNT		&kp NO_AMPS &kp NO_SLSH &kp NO_EQL &kp SEMI &kp NO_QMARK
+		&kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR    &kp PRCNT		&kp CARET &kp LS(COMMA) &kp LS(DOT) &kp SEMI &kp BKSP
 		&kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp BSLH &kp LBRC  &kp RBRC &kp PIPE  &kp ENTER
 		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 	&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3
 					    &to 0  &sk LSHIFT  					&sk RALT &to 2
