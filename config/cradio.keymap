@@ -38,8 +38,9 @@
 #define NO_TILDE RA(RBKT)  // ~
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
-#define NO_SLSH LS(N7) // /
-#define NO_BLSH	 RA(NON_US_BACKSLASH) // \
+#define NO_FLSH LS(N7) // /
+#define NO_BLSH	 NON_US_BACKSLASH // \
+#define NO_OLSH	 RA(NON_US_BACKSLASH) // \
 
 
 
@@ -90,10 +91,10 @@
 
        		left_layer {
 		bindings = <
-		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR &kp NO_PRCNT 			&kp NO_AMPS &kp NO_SLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
+		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR &kp NO_PRCNT 			&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
 		&kp TAB    &kp EQUAL    &kp LA(RBKT)      &kp LA(LS(RBKT))     &kp SQT 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER
 		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 		&kp LBKT &kp LPRN &kp RPRN &kp RBKT  &to 3
-					    &to 0  &sk LSHIFT  					&sk RALT &to 2
+					    &to 0  &kp GUI  					&sk RALT &to 2
 		>;
 		};
 
