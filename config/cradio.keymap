@@ -39,6 +39,7 @@
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
 #define NO_BLSH	 RA(NON_US_BACKSLASH) // \
+#define NO_SLSH LS(N7) // /
 
 
 
