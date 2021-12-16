@@ -118,13 +118,21 @@
 
 		gaming_layer {
 		bindings = <
-		&kp ESC  &kp Q &kp W  &kp R &mt T M    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&mt TAB ESC &kp Q &kp W  &kp E &kp R    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
 		&kp LSFT  &kp A &kp S &kp D &mt C F  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
-		&kp LCTRL  &kp N1 &kp N2 &kp N3 &kp NO_RBRC	    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
-					  &kp CLCK &kp SPC 					&kp SPC  &to 0
+		&kp LCTRL  &kp N1 &kp N2 &kp N3 &kp B		&kp N0 &mt F1 N1 &mt F2 N2 &kp N3  &kp ENTER
+					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
 		};
 
+		gaming_layer {
+		bindings = <
+		&kp NO_PIPE &kp Q &kp W  &kp E &kp N   			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&kp LCTRL  &kp F1 &kp F2 &kp N4 &kp M			&kp N0 &mt F1 N1 &mt F2 N2 &kp N3  &kp ENTER
+					  &mo 5 &kp SPC 					&kp SPC  &to 0
+		>;
+		};
 		bt {
 		bindings = <
 		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans
