@@ -125,7 +125,7 @@
 		>;
 		};
 
-		gaming_layer {
+		gaming2_layer {
 		bindings = <
 		&kp NO_PIPE &kp Q &kp W  &kp E &kp N   			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
 		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
@@ -133,6 +133,7 @@
 					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
 		};
+
 		bt {
 		bindings = <
 		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans
