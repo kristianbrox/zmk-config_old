@@ -127,9 +127,9 @@
 
 		gaming2_layer {
 		bindings = <
-		&kp NO_PIPE &kp Q &kp W  &kp E &kp N   			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp NO_PIPE &kp T &kp W  &kp E &mp N M 			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
 		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
-		&kp LCTRL  &kp F1 &kp F2 &kp N4 &kp M			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
+		&kp LCTRL  &kp F1 &kp F2 &kp N4 &kp Y			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
 		};
