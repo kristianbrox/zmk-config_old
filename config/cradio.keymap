@@ -111,10 +111,20 @@
 		bindings = <
 		&trans  &mwh SCROLL_LEFT    &mmv MOVE_UP    &mwh SCROLL_RIGHT    &kp NUM_5 			&kp LG(LBKT)   &kp LC(LS(TAB))   &kp RC(TAB) &kp LG(RBKT) &trans
 		&kp F1 &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp DEL  						&kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp ENTER
-		&td LG(GRAVE) GRAVE &kp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &trans   				&mkp LCLK &mkp RCLK PG_DN  &kp K_VOL_DN  &trans &kp ENTER
+		&td LG(GRAVE) GRAVE &mkp RCLK  &mwh SCROLL_UP &mwh SCROLL_DOWN &trans   				&mkp LCLK &mkp RCLK PG_DN  &kp K_VOL_DN  &trans &kp ENTER
 					 &to 0 &trans  					&sk RALT &to 1
 		>;
 		};
+
+		gaming_layer {
+		bindings = <
+		&kp ESC  &kp Q &kp W  &kp NO_LPAR &kp NO_RPAR    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp TAB  &kp A &kp S &kp D &kp NO_RBKT  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&kp LSFT  &kp AMPS &kp SLASH &kp NO_LBRC &kp NO_RBRC	    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
+					  &to 0 &mt LGUI BKSP 					&kp SPC  &to 4
+		>;
+		};
+
 		bt {
 		bindings = <
 		&trans  &trans &trans &trans &trans &trans &trans &trans &trans &trans
