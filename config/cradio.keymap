@@ -120,16 +120,16 @@
 		bindings = <
 		&mt TAB ESC &kp Q &kp W  &kp E &kp R    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
 		&kp LSFT  &kp A &kp S &kp D &mt C F  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
-		&kp LCTRL  &kp N1 &kp N2 &kp N3 &kp B		&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
+		&kp LCTRL  &kp N1 &kp N2 &kp N3 &kp N5		&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
 		};
 
 		gaming2_layer {
 		bindings = <
-		&kp NO_PIPE &kp T &kp W  &kp E &mp N M 			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
-		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
-		&kp LCTRL  &kp F1 &kp F2 &kp N4 &kp Y			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
+		&kp NO_PIPE &kp Q &kp W  &kp T &mp N M 			&kp LNLCK &kp F7 &kp F8 &kp F9 &kp NO_DASH
+		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp F4  &kp F5  &kp F6   &kp NO_PLUS
+		&kp LCTRL  &mp Å U &kp Y &kp N4 &kp B			&kp N0 &kp F1 &kp F2 &kp N3  &kp ENTER
 					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
 		};
