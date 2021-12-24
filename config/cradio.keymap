@@ -91,7 +91,7 @@
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR	&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp DEL
+		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR	&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
 		&kp TAB    &kp NO_AT    &kp NO_PRCNT &kp NO_STAR  &kp NO_TILDE 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
 		&kp LSFT   &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 		&kp LBKT &kp LPRN &kp RPRN &kp RBKT &kp ENTER
 					   		          &to 0  &mt LGUI BKSP		&sk RALT &to 2
