@@ -39,7 +39,7 @@
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
 #define NO_FLSH LS(N7) // /
-#define NO_BLSH	 NON_US_BACKSLASH // \
+#define NO_BLSH	 EQUAL // \
 #define NO_OLSH	 RA(NON_US_BACKSLASH) // \
 
 
@@ -84,15 +84,15 @@
 		bindings = <
 		&mt AE Q &kp W &kp E &kp R &kp T					&kp Y &kp U &kp I &mt OE O &kp P
 		&mt TAB A &kp S &kp D &kp F &kp G		        	        &kp H &kp J &kp K &kp L &kp AA
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &kp CMMA &kp DOT &mt RSFT ENTER
+		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &mt NO_DASH CMMA &kp DOT &mt RSFT ENTER
          			&mt LCTRL ESC &mt LGUI BKSP				&mt LALT SPC &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR &kp NO_PRCNT 			&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp DEL
-		&kp TAB    &kp EQUAL    &kp LA(RBKT)    &kp LA(LS(RBKT))     &kp SQT 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
+		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR	&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp DEL
+		&kp TAB    &kp NO_AT    &kp NO_PRCNT &kp NO_STAR  &kp NO_TILDE 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
 		&kp LSFT   &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 		&kp LBKT &kp LPRN &kp RPRN &kp RBKT &kp ENTER
 					   		          &to 0  &mt LGUI BKSP		&sk RALT &to 2
 		>;
@@ -100,8 +100,8 @@
 
 		right_layer {
 		bindings = <
-		&kp ESC  &kp C_PP &kp C_PREV  &kp NO_LPAR &kp NO_RPAR    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
-		&kp TAB  &trans   &kp C_VOL_DN &kp NO_LBKT &kp NO_RBKT  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&kp ESC  &kp C_PP &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp NLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp TAB  &trans   &kp NO_STAR &kp NO_LBKT &kp NO_RBKT  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
 		&kp LSFT  &kp AMPS &kp SLASH &kp NO_LBRC &kp NO_RBRC	    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &to 0 &mt LGUI BKSP 					&kp SPC  &to 3
 		>;
