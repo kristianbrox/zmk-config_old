@@ -100,7 +100,7 @@
 
 		right_layer {
 		bindings = <
-		&kp ESC  &kp C_PP &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp ESC  &kp C_PP &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp NUMLOCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
 		&kp TAB  &trans   &kp NO_STAR &kp NO_LBKT &kp NO_RBKT  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
 		&kp LSFT  &kp AMPS &kp SLASH &kp NO_LBRC &kp NO_RBRC	    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &to 0 &mt LGUI BKSP 					&kp SPC  &to 3
