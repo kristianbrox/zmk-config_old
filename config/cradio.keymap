@@ -91,18 +91,18 @@
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH &kp NO_DLLR	&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
-		&kp TAB    &kp NO_AT    &kp NO_PRCNT &kp NO_STAR  &kp NO_TILDE 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
-		&kp LSFT   &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))  &kp DQT 		&kp LBKT &kp LPRN &kp RPRN &kp RBKT &kp ENTER
-					   		          &to 0  &mt LGUI BKSP		&sk RALT &to 2
+		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH  &kp NO_DLLR		&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
+		&kp TAB    &kp NO_AT    &kp NO_STAR &kp NO_PRCNT &kp NO_TILDE 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
+		&kp LSFT   &kp NO_APOS 	&kp K_MUTE &kp K_VOL_UP  &kp K_VOL_DN		&kp LBKT &kp LPRN &kp RPRN &kp RBKT &kp ENTER
+					   		     &to 0  &mt LGUI BKSP	&sk RALT &to 2
 		>;
 		};
 
 		right_layer {
 		bindings = <
-		&kp ESC  &kp C_PP &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp DEL &kp N7 &kp N8 &kp N9 &kp NO_DASH
-		&kp TAB  &trans   &kp NO_STAR &kp NO_LBKT &kp NO_RBKT  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
-		&kp LSFT  &kp NO_LESS &kp NO_MORE &kp NO_LBRC &kp NO_RBRC	    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
+		&kp ESC  &kp NO_PRCNT &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp DEL &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp TAB  &kp CARET &kp NO_STAR &kp NO_LBKT &kp NO_RBKT  				&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&kp LSFT  &kp NO_LESS &kp NO_MORE &kp NO_LBRC &kp NO_RBRC    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &to 0 &mt LGUI BKSP 					&kp SPC  &to 3
 		>;
 		};
