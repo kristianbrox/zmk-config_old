@@ -36,7 +36,7 @@
 #define NO_COL	 LS(COMMA) // :
 #define NO_SCOL  LS(DOT)   // ;
 #define NO_TILDE RA(RBKT)  // ~
-#define NO_HAT   LS(6)	   // ^
+#define NO_HAT   LS(RBKT)  // ^
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
 #define NO_FLSH LS(N7) // /
