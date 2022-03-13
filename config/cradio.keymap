@@ -67,6 +67,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+	dth: double-tap-to-hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DOUBLETAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+	};
 	td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
@@ -83,10 +92,10 @@
 
        		default_layer {
 		bindings = <
-		&mt AE Q &kp W &kp E &kp R &kp T					&kp Y &kp U &kp I &mt OE O &kp P
-		&mt TAB A &kp S &kp D &kp F &kp G		        	        &kp H &kp J &kp K &kp L &kp AA
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &mt NO_DASH CMMA &kp DOT &mt RSFT ENTER
-         			&mt LCTRL ESC &mt LGUI BKSP				&mt LALT SPC &to 1
+		&dth AE Q &kp W &kp E &kp R &kp T					&kp Y &kp U &kp I &dth OE O &kp P
+		&dth TAB A &kp S &kp D &kp F &kp G		        	        &kp H &kp J &kp K &kp L &kp AA
+		&dth LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M &dth NO_DASH CMMA &kp DOT &dth RSFT ENTER
+         			&mt LCTRL ESC &dth LGUI BKSP				&dth LALT SPC &to 1
 		>;
 		};
 
@@ -95,16 +104,16 @@
 		&kp NO_PIPE &kp NO_EXCL &kp NO_QUOT &kp NO_HASH  &kp NO_DLLR		&kp NO_AMPS &kp NO_FLSH &kp NO_EQL &kp NO_QMARK &kp NO_BLSH
 		&kp TAB    &kp NO_AT    &kp NO_STAR &kp NO_PRCNT &kp NO_TILDE 		&kp LEFT &kp DOWN  &kp UP &kp RIGHT &to 3
 		&kp LSFT   &kp NO_APOS 	&kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP		&kp C_PREV &kp C_NEXT &kp C_BRI_DN &kp C_BRI_UP &kp ENTER
-					   		     &to 0  &mt LGUI BKSP	&sk RALT &to 2
+					   		     &to 0  &dth LGUI BKSP	&dth RALT SPC &to 2
 		>;
 		};
 
 		right_layer {
 		bindings = <
 		&kp ESC  &kp NO_PRCNT &kp NO_FLSH  &kp NO_LPAR &kp NO_RPAR    			&kp DEL &kp N7 &kp N8 &kp N9 &kp NO_DASH
-		&kp TAB  &kp NO_HAT &kp NO_STAR &kp NO_LBKT &kp NO_RBKT 			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&kp TAB  &kp NO_HAT &kp NO_STAR &kp NO_LBKT &kp NO_RBKT 			&dth CMMA DOT &kp N4  &kp N5  &kp N6  &kp NO_PLUS
 		&kp LSFT  &kp NO_LESS &kp NO_MORE &kp NO_LBRC &kp NO_RBRC    			&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
-					  &to 0 &mt LGUI BKSP 					&kp SPC  &to 1
+					  &to 0 &dth LGUI BKSP 					&dth LALT SPC  &to 1
 		>;
 		};
 
@@ -119,8 +128,8 @@
 
 		gaming_layer {
 		bindings = <
-		&mt TAB ESC &kp Q &kp W  &kp E &kp R    			&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
-		&kp LSFT  &kp A &kp S &kp D &mt C F  			&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
+		&mt TAB ESC &kp Q &kp W  &kp E &kp R    	&kp LNLCK &kp N7 &kp N8 &kp N9 &kp NO_DASH
+		&kp LSFT  &kp A &kp S &kp D &mt C F  		&kp DOT &kp N4  &kp N5  &kp N6   &kp NO_PLUS
 		&kp LCTRL  &kp N1 &kp N2 &kp N3 &kp N5		&kp N0 &kp N1 &kp N2 &kp N3  &kp ENTER
 					  &mo 5 &kp SPC 					&kp SPC  &to 0
 		>;
@@ -128,10 +137,10 @@
 
 		gaming2_layer {
 		bindings = <
-		&kp NO_PIPE &kp Q &kp W  &kp T &mt N M 			&kp LNLCK &kp F7 &kp F8 &kp F9 &kp NO_DASH
-		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp DOT &kp F4  &kp F5  &kp F6   &kp NO_PLUS
-		&kp LCTRL  &mt AA U &kp Y &kp N4 &kp B			&kp N0 &kp F1 &kp F2 &kp N3  &kp ENTER
-					  &mo 5 &kp SPC 					&kp SPC  &to 0
+		&kp NO_PIPE &kp Q &kp W  &kp T &mt N M 			&kp F12 &kp F7 &kp F8 &kp F9 &kp HOME
+		&kp CLCK  &kp A &kp S &kp D &kp G  			&kp F11 &kp F4 &kp F5 &kp F6 &kp END
+		&kp LCTRL  &mt AA U &kp Y &kp N4 &kp B			&kp F10 &kp F1 &kp F2 &kp F3 &kp LSFT
+					  &mo 5 &kp SPC 					&kp LALT  &to 0
 		>;
 		};
 
